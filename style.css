@@ -3,23 +3,19 @@ body{
     margin: 0;
 }
 
-ul{
-    margin: 0;
+main{
     display: flex;
-    align-items: center;
-    background: linear-gradient(to bottom, #30343b,#61666e) ;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
-li{
-    display: inline-block;
-    font-weight: bold;
+.item{
+    flex-grow: 1;
+    background-color: rgb(2, 60, 110);
+    padding: 50px 20px;
+    flex-basis: 200px;
+    text-align: center;
     color: #fff;
-    padding: 10px;
-}
-
-li:hover{
-    background: linear-gradient(to top, #30343b,#61666e) ;
-    border-left: 1px solid rgba(20, 4, 4, 0.1);
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 10px 9px;
+    margin: 5px;
 }
