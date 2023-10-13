@@ -8,6 +8,8 @@ main {
   flex-direction: row-reverse;
   justify-content: flex-end;
   flex-wrap: wrap;
+}
+.caixa{
   width:60%;
   margin: 20px auto;
   padding: 20px;
@@ -17,7 +19,7 @@ main {
 }
 h2 {
   font-family: Telegraf;
-  font-weight: bold; /*Não sei uma fonte melhor*/
+  font-weight: bold; 
 }
 .item {
   flex-grow: 1;
