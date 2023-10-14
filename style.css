@@ -6,7 +6,6 @@ body {
   background-position: center top;
   background-color: rgb(74, 105, 189);
 }
-
 .form {
   margin: 20px;
   position: fixed;
@@ -19,15 +18,13 @@ body {
   text-align: center;
   display: block;
 }
-
 main {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
   flex-wrap: wrap;
 }
-
-.caixa {
+.caixa{
   position: flex;
   left: 2%;
   background-color: #eadcea7c;
@@ -35,17 +32,15 @@ main {
   border-radius: 10px;
   min-width: 2%;
   max-width: 100%;
-  width: fit-content;
+  width: fit-content; 
   height: fit-content;
   padding: 7px;
   margin: 20px;
 }
-
 h2 {
   font-family: Telegraf;
   font-weight: bold;
 }
-
 .item {
   flex-grow: 1;
   background-color: rgb(24, 31, 37);
@@ -55,81 +50,57 @@ h2 {
   color: #ffffff;
   margin: 5px;
 }
-
 .flex-2 {
   flex-grow: 2;
   flex-basis: 380px;
 }
-
 ul {
   margin: 0;
   display: flex;
   align-items: center;
   background: linear-gradient(to bottom, #1d2025, #4b5668);
 }
-
 li {
   display: inline-block;
   font-weight: bold;
   color: #fff;
   padding: 10px;
 }
-
 li:hover {
-  background: linear-gradient(to top, #1d2025, #4b5668);
+  background: linear-gradient(to top,  #1d2025, #4b5668);
   border-left: 1px solid rgba(20, 4, 4, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   padding: 10px 9px;
 }
-
-.img {
+.img{
   object-fit: cover;
   object-position: center;
 }
-<<<<<<< HEAD
 .caixa_grid{
-  margin: 20px;
-  margin-top: 20px;
-=======
-
-.caixa_grid {
-  margin-top: 100px;
   margin: 0 auto;
-}
-
-.caixa_grid {
-  margin-top: 100px;
-  margin: 0 auto;
->>>>>>> ed5932d18df9d1d31ea959b10fa5c2f57dbed8dc
   background-color: #eadcea7c;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   max-width: 1200px;
-  width: 80%;
+  width: 80%; 
   padding: 7px;
   text-align: center;
 }
-
-.grid {
+.grid{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3,1fr);
   gap: 10px;
 }
-
-label {
+label{
   display: block;
   flex-direction: row;
   line-height: 26px;
   text-align: center;
   padding-bottom: 10px;
 }
-
-input[type=text],
-input[type=number],
-input[type=email] {
+input[type=text], input[type=number], input[type=email] {
   min-width: 250px;
 }
-
-.grid {
+.grid{
   display: grid;
 }
