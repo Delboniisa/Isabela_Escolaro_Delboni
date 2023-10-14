@@ -11,11 +11,11 @@ body {
   position: fixed;
   top: 1;
   right: 2%;
-  width: 20%;
-  height: 50%;
+  width: auto;
+  height: auto;
   background-color: #eadcea7c;
   border-radius: 10px;
-  margin-right: auto;
+  padding: 20px;
 }
 main {
   display: flex;
@@ -79,18 +79,4 @@ li:hover {
   border-left: 1px solid rgba(20, 4, 4, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   padding: 10px 9px;
-}
-form{
-  display: inline-block;
-  width: 78px;
-  padding-left: 10px;
-  white-space: nowrap;
-  min-width: 10%;
-  max-width: 100%;
-  max-height: 300px;
-  width: fit-content; 
-  height: fit-content;
-}
-input{
-  width: auto;
 }
