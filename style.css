@@ -75,6 +75,13 @@ li:hover {
   object-fit: cover;
   object-position: center;
 }
-.grid{
-  display: grid;
+label{
+  display: block;
+  flex-direction: row;
+  line-height: 26px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+input[type=text], input[type=number], input[type=email] {
+  min-width: 250px;
 }
