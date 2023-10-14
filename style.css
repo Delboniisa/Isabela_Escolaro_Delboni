@@ -90,34 +90,38 @@ li:hover {
 .caixa_grid {
   margin-top: 100px;
   margin: 0 auto;
-  background-color: #eadcea7c;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  max-width: 1200px;
-  width: 80%;
-  padding: 7px;
-}
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
+  .caixa_grid {
+    margin-top: 100px;
+    margin: 0 auto;
+    background-color: #eadcea7c;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    max-width: 1200px;
+    width: 80%;
+    padding: 7px;
+  }
 
-label {
-  display: block;
-  flex-direction: row;
-  line-height: 26px;
-  text-align: center;
-  padding-bottom: 10px;
-}
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
 
-input[type=text],
-input[type=number],
-input[type=email] {
-  min-width: 250px;
-}
+  label {
+    display: block;
+    flex-direction: row;
+    line-height: 26px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
 
-.grid {
-  display: grid;
-}
+  input[type=text],
+  input[type=number],
+  input[type=email] {
+    min-width: 250px;
+  }
+
+  .grid {
+    display: grid;
+  }
