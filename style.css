@@ -77,22 +77,19 @@ li:hover {
   object-position: center;
 }
 .caixa_grid{
-  position: center;
+  margin-top: 100px;
+  margin: 0 auto;
   background-color: #eadcea7c;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  min-width: 2%;
-  max-width: 100%;
-  width: fit-content; 
-  height: fit-content;
+  max-width: 1200px;
+  width: 80%; 
   padding: 7px;
-  margin: 20px;
 }
 .grid{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 1em;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
 }
 label{
   display: block;
