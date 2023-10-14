@@ -51,29 +51,22 @@ h2 {
   color: #ffffff;
   margin: 5px;
 }
-.img{
-  object-fit: cover;
-  object-position: center;
-}
 .flex-2 {
   flex-grow: 2;
   flex-basis: 380px;
 }
-
 ul {
   margin: 0;
   display: flex;
   align-items: center;
   background: linear-gradient(to bottom, #1d2025, #4b5668);
 }
-
 li {
   display: inline-block;
   font-weight: bold;
   color: #fff;
   padding: 10px;
 }
-
 li:hover {
   background: linear-gradient(to top,  #1d2025, #4b5668);
   border-left: 1px solid rgba(20, 4, 4, 0.1);
