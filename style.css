@@ -16,6 +16,7 @@ body {
   border-radius: 10px;
   padding: 20px;
   text-align: center;
+  display: block;
 }
 main {
   display: flex;
