@@ -103,3 +103,6 @@ label{
 input[type=text], input[type=number], input[type=email] {
   min-width: 250px;
 }
+.grid{
+  display: grid;
+}
