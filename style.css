@@ -77,3 +77,6 @@ li:hover {
   object-fit: cover;
   object-position: center;
 }
+.grid{
+  display: grid;
+}
