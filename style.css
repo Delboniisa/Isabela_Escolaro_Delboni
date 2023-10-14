@@ -25,13 +25,18 @@ main {
 }
 .caixa{
   margin-top: 2%;
-  position: fixed;
+  position: flex;
   left: 2%;
   width: 70%;
   height: 10%;
   background-color: #eadcea7c;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  min-width: 2%;
+  max-width: 100%;
+  width: fit-content; 
+  height: fit-content;
+  padding: 7px;
 }
 h2 {
   font-family: Telegraf;
@@ -74,4 +79,13 @@ li:hover {
   border-left: 1px solid rgba(20, 4, 4, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   padding: 10px 9px;
+}
+form{
+  display: inline-block;
+  width: 78px;
+  padding-left: 10px;
+  white-space: nowrap
+}
+input{
+  width: auto;
 }
