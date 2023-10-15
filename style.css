@@ -6,7 +6,7 @@ body {
   background-repeat: no-repeat;
   background-position: center top;
   background-color: rgb(74, 105, 189);
-  background-attachment: fixed;
+  background-attachment:local;
 }
 
 .gridConteiner {
@@ -23,7 +23,7 @@ body {
   display: flex;
   align-items: center;
   background: linear-gradient(to bottom, #1d2025, #4b5668);
-  width: 300%;
+  width: 100%;
 }
 
 li {
@@ -71,6 +71,7 @@ h2 {
   padding-top: 20px;
   text-align: center;
   font-size: 13px;
+  width: 100%;
 }
 
 .footer h3 {
@@ -89,7 +90,7 @@ h2 {
 /*Comando para Home/index*/
 .form {
   margin: 20px;
-  position: fixed;
+  position: inherit;
   right: 2%;
   width: auto;
   height: auto;
@@ -107,7 +108,7 @@ h2 {
 
 /*Comando para Sobre*/
 .caixa {
-  position: flex;
+  position: inherit;
   left: 2%;
   background-color: #eadcea7c;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -117,7 +118,7 @@ h2 {
   width: fit-content;
   height: fit-content;
   padding: 7px;
-  margin: auto;
+  margin: 20px;
 }
 
 .aside_sobre {
@@ -170,7 +171,7 @@ table {
   background-color: rgba(211, 211, 211, 0.904);
   margin: auto;
   position: relative;
-  width: 600px;
+  width: 90%;
   height: 200px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -247,4 +248,8 @@ input[type=text],
 input[type=number],
 input[type=email] {
   min-width: 250px;
+}
+
+.caixa1 {
+  text-align: justify;
 }
