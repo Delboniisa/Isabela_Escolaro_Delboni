@@ -121,7 +121,7 @@ li:hover {
   padding: 9px;
   text-align: center;
   margin-top: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .grid div{
   color: #000000;
@@ -149,6 +149,7 @@ input[type=text], input[type=number], input[type=email] {
   height: 250px;
   border-radius: 10px;
 }
+
 .footer{
   background: linear-gradient(to top,  #4b5668, #1d2025);
   background-color: #1d2025;
@@ -168,4 +169,24 @@ input[type=text], input[type=number], input[type=email] {
   font-family: Telegraf;
   font-weight: bold;
   color: #000000;
+}
+table {
+  border-color: 1px solid rgba(0, 0, 0, 0.466);
+  background-color: rgba(211, 211, 211, 0.904);
+  margin: auto;
+  position: relative;
+  width: 600px;
+  height: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+th {
+  background-color: rgba(169, 169, 169, 0.61);
+  text-align: center;
+}
+
+td {
+  padding: 10px;
 }
