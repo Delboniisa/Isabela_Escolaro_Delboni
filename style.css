@@ -111,7 +111,6 @@ li:hover {
   border-radius: 10px;
 }
 .aside_estatistica{
-  position: fixed right;
   grid-area: aside;
   margin-right: 30px;
   background-color: #eadcea7c;
