@@ -2,11 +2,12 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  padding-bottom: 100px;
   background-image: url(./imagens/flat\ earth\ 1.gif);
   background-repeat: no-repeat;
   background-position: center top;
   background-color: rgb(74, 105, 189);
-  background-attachment:local;
+  background-attachment: local;
 }
 
 .gridConteiner {
@@ -15,15 +16,17 @@ body {
   grid-template-rows: 60px auto auto;
   grid-template-areas:
     "header header header"
-    "main main aside"
+    "main main aside";
 }
 
-.header ul {
-  margin: 0;
-  display: flex;
+header {
+  margin: 0px;
+  position: relative;
+  top: -20px;
   align-items: center;
   background: linear-gradient(to bottom, #1d2025, #4b5668);
   width: 100%;
+  color: #fff;
 }
 
 li {
@@ -45,7 +48,7 @@ li:hover {
   flex-basis: 380px;
 }
 
-.main {
+main {
   margin-top: 5px;
   margin-bottom: 30px;
   display: flex;
@@ -63,7 +66,7 @@ h2 {
   font-weight: bold;
 }
 
-.footer {
+footer {
   background: linear-gradient(to top, #4b5668, #1d2025);
   background-color: #1d2025;
   color: #4b5668;
@@ -72,6 +75,7 @@ h2 {
   text-align: center;
   font-size: 13px;
   width: 100%;
+  position: absolute;
 }
 
 .footer h3 {
@@ -90,10 +94,12 @@ h2 {
 /*Comando para Home/index*/
 .form {
   margin: 20px;
-  position: inherit;
+  margin-top: 100px;
+  position: static;
   right: 2%;
-  width: auto;
-  height: auto;
+  width: fit-content;
+  height: fit-content;
+  min-width: 30%;
   background-color: #eadcea7c;
   border-radius: 10px;
   padding: 20px;
@@ -104,6 +110,15 @@ h2 {
 .img {
   object-fit: cover;
   object-position: center;
+}
+
+.caixa1 {
+  text-align: justify;
+  margin: 20px;
+  font-size: 20px;
+  background-color: #eadcea7c;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 /*Comando para Sobre*/
@@ -189,15 +204,16 @@ td {
 
 /*Comando para Produtos*/
 .aside_produto {
-  position: fixed right;
+  position: fixed;
+  right: 0;
   grid-area: aside;
   margin-right: 40px;
   background-color: #eadcea7c;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   max-width: 800px;
-  width: auto;
-  height: 55%;
+  width: fit-content;
+  height: fit-content;
   padding: 9px;
   text-align: center;
   margin-top: 5px;
@@ -207,11 +223,11 @@ td {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10x;
+  gap: 10px;
   align-items: center;
   border-color: transparent;
   border-radius: 10px;
-
+  position: flex;
 }
 
 .grid div {
@@ -248,8 +264,4 @@ input[type=text],
 input[type=number],
 input[type=email] {
   min-width: 250px;
-}
-
-.caixa1 {
-  text-align: justify;
 }
