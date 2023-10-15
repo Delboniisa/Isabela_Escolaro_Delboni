@@ -8,14 +8,16 @@ body {
   background-color: rgb(74, 105, 189);
   background-attachment: fixed;
 }
+
 .gridConteiner {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 60px auto auto;
   grid-template-areas:
-  "header header header"
-  "main main aside"
+    "header header header"
+    "main main aside"
 }
+
 .header ul {
   margin: 0;
   display: flex;
@@ -23,22 +25,26 @@ body {
   background: linear-gradient(to bottom, #1d2025, #4b5668);
   width: 300%;
 }
+
 li {
   display: inline-block;
   font-weight: bold;
   color: #fff;
   padding: 13px;
 }
+
 li:hover {
-  background: linear-gradient(to top,  #1d2025, #4b5668);
+  background: linear-gradient(to top, #1d2025, #4b5668);
   border-left: 1px solid rgba(20, 4, 4, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   padding: 13px 12px;
 }
+
 .flex-2 {
   flex-grow: 2;
   flex-basis: 380px;
 }
+
 .main {
   margin-top: 5px;
   margin-bottom: 30px;
@@ -51,26 +57,30 @@ li:hover {
   margin-left: 30px;
   height: auto;
 }
+
 h2 {
   font-family: Telegraf;
   font-weight: bold;
 }
-.footer{
-  background: linear-gradient(to top,  #4b5668, #1d2025);
+
+.footer {
+  background: linear-gradient(to top, #4b5668, #1d2025);
   background-color: #1d2025;
-  color:#4b5668;
+  color: #4b5668;
   height: 100px;
   padding-top: 20px;
   text-align: center;
   font-size: 13px;
 }
-.footer h3{
+
+.footer h3 {
   font-family: Telegraf;
   font-weight: bold;
   color: #000000;
   margin-top: 2px;
 }
-.footer p{
+
+.footer p {
   font-family: Telegraf;
   font-weight: bold;
   color: #000000;
@@ -89,12 +99,14 @@ h2 {
   text-align: center;
   display: block;
 }
-.img{
+
+.img {
   object-fit: cover;
   object-position: center;
 }
+
 /*Comando para Sobre*/
-.caixa{
+.caixa {
   position: flex;
   left: 2%;
   background-color: #eadcea7c;
@@ -102,53 +114,57 @@ h2 {
   border-radius: 10px;
   min-width: 2%;
   max-width: 100%;
-  width: fit-content; 
+  width: fit-content;
   height: fit-content;
   padding: 7px;
   margin: auto;
 }
-.aside_sobre{
+
+.aside_sobre {
   grid-area: aside;
   margin-right: 30px;
   background-color: #eadcea7c;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   max-width: 800px;
-  width: auto; 
+  width: auto;
   height: 27%;
   padding: 9px;
   text-align: center;
   margin-top: 5px;
   margin-bottom: 50px;
 }
+
 /*Comando para box-shadow*/
-.caixa_grid{
+.caixa_grid {
   margin-left: 5px;
   background-color: #eadcea7c;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   max-width: 800px;
-  width: 80%; 
+  width: 80%;
   padding: 7px;
   text-align: center;
 }
+
 /*Comando para contato*/
 
 /*Comando para Estatística*/
-.aside_estatistica{
+.aside_estatistica {
   grid-area: aside;
   margin-right: 30px;
   background-color: #eadcea7c;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   max-width: 800px;
-  width: auto; 
+  width: auto;
   height: 27%;
   padding: 9px;
   text-align: center;
   margin-top: 5px;
   margin-bottom: 50px;
 }
+
 table {
   border-color: 1px solid rgba(0, 0, 0, 0.466);
   background-color: rgba(211, 211, 211, 0.904);
@@ -160,15 +176,18 @@ table {
   margin-bottom: 10px;
   border-radius: 10px;
 }
+
 th {
   background-color: rgba(169, 169, 169, 0.61);
   text-align: center;
 }
+
 td {
   padding: 10px;
 }
+
 /*Comando para Produtos*/
-.aside_produto{
+.aside_produto {
   position: fixed right;
   grid-area: aside;
   margin-right: 40px;
@@ -176,27 +195,30 @@ td {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   max-width: 800px;
-  width: auto; 
+  width: auto;
   height: 55%;
   padding: 9px;
   text-align: center;
   margin-top: 5px;
   margin-bottom: 50px;
 }
-.grid{
+
+.grid {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 10x;
   align-items: center;
   border-color: transparent;
   border-radius: 10px;
 
 }
-.grid div{
+
+.grid div {
   color: #000000;
   text-align: center;
 }
-.item{
+
+.item {
   flex-grow: 1;
   background-color: transparent;
   padding: 15px 10px;
@@ -205,19 +227,24 @@ td {
   color: #ffffff;
   margin-left: 10px;
 }
-.item img{
+
+.item img {
   width: 300px;
   height: 200px;
   border-radius: 10px;
 }
+
 /*Comando para organização dos botões*/
-label{
+label {
   display: block;
   flex-direction: row;
   line-height: 26px;
   text-align: center;
   padding-bottom: 10px;
 }
-input[type=text], input[type=number], input[type=email] {
+
+input[type=text],
+input[type=number],
+input[type=email] {
   min-width: 250px;
 }
