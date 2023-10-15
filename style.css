@@ -17,13 +17,16 @@ body {
     "header header header"
     "main main aside"
 }
-
+header{
+  grid-area: header;
+  width: 100%;
+}
 .header ul {
+  max-height: 60px;
   margin: 0;
   display: flex;
   align-items: center;
   background: linear-gradient(to bottom, #1d2025, #4b5668);
-  width: 100%;
 }
 
 li {
