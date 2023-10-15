@@ -18,15 +18,16 @@ body {
     "header header header"
     "main main aside";
 }
-
-header {
-  margin: 0px;
-  position: relative;
-  top: -20px;
+header{
+  grid-area: header;
+  width: 100%;
+}
+.header ul {
+  max-height: 60px;
+  margin: 0;
+  display: flex;
   align-items: center;
   background: linear-gradient(to bottom, #1d2025, #4b5668);
-  width: 100%;
-  color: #fff;
 }
 
 li {
@@ -64,6 +65,7 @@ main {
 h2 {
   font-family: Telegraf;
   font-weight: bold;
+  margin-top: 8%;
 }
 
 footer {
@@ -135,16 +137,18 @@ footer {
   padding: 7px;
   margin: 20px;
 }
-
+.caixa_grid p{
+  text-align: left;
+  margin-left: 10px;
+}
 .aside_sobre {
   grid-area: aside;
-  margin-right: 30px;
+  margin-right: 40px;
   background-color: #eadcea7c;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   max-width: 800px;
-  width: auto;
-  height: 27%;
+  max-height: 48%;
   padding: 9px;
   text-align: center;
   margin-top: 5px;
@@ -168,13 +172,13 @@ footer {
 /*Comando para Estatística*/
 .aside_estatistica {
   grid-area: aside;
-  margin-right: 30px;
+  margin-right: 40px;
   background-color: #eadcea7c;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   max-width: 800px;
   width: auto;
-  height: 27%;
+  height: 20%;
   padding: 9px;
   text-align: center;
   margin-top: 5px;
@@ -200,6 +204,9 @@ th {
 
 td {
   padding: 10px;
+}
+.tab-foot{
+  background-color: #2d3136ab;
 }
 
 /*Comando para Produtos*/
