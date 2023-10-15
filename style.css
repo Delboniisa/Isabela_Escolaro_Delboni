@@ -185,6 +185,9 @@ th {
 td {
   padding: 10px;
 }
+.tab-foot{
+  background-color: #2d3136ab;
+}
 
 /*Comando para Produtos*/
 .aside_produto {
