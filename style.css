@@ -171,17 +171,17 @@ td {
 .aside_produto{
   position: fixed right;
   grid-area: aside;
-  margin-right: 30px;
+  margin-right: 40px;
   background-color: #eadcea7c;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   max-width: 800px;
   width: auto; 
-  height: 45%;
+  height: 55%;
   padding: 9px;
   text-align: center;
   margin-top: 5px;
-  margin-bottom: 50px
+  margin-bottom: 50px;
 }
 .grid{
   display: grid;
@@ -196,18 +196,18 @@ td {
   color: #000000;
   text-align: center;
 }
-.item {
+.item{
   flex-grow: 1;
   background-color: transparent;
   padding: 15px 10px;
   flex-basis: 200px;
   text-align: right;
   color: #ffffff;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 .item img{
-  width: 350px;
-  height: 250px;
+  width: 300px;
+  height: 200px;
   border-radius: 10px;
 }
 /*Comando para organização dos botões*/
