@@ -295,6 +295,11 @@ td {
   border-radius: 10px;
 }
 
+.caixa_prod{
+  background-color: #eadcea7c;
+  border-radius: 10px;
+}
+
 /*Comando para organização dos botões*/
 label {
   display: block;
