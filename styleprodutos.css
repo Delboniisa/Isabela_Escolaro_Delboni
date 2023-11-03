@@ -1,0 +1,193 @@
+/*Comando para códigos gerais*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding-bottom: 100px;
+    background-image: url(./imagens/flat\ earth\ 1.gif);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: rgb(74, 105, 189);
+    background-attachment: local;
+    background-attachment: fixed;
+  }
+  
+  .gridConteiner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 60px auto auto;
+    grid-template-areas:
+      "header header header"
+      "main main aside";
+  }
+  
+  header {
+    grid-area: header;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom, #1d2025, #4b5668);
+  }
+  
+  .header ul {
+    max-height: 60px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom, #1d2025, #4b5668);
+  }
+  
+  li {
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+    padding: 13px;
+  }
+  
+  li:hover {
+    background: linear-gradient(to top, #1d2025, #4b5668);
+    border-left: 1px solid rgba(20, 4, 4, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 13px 12px;
+  }
+  
+  .flex-2 {
+    flex-grow: 2;
+    flex-basis: 380px;
+  }
+  
+  main {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    grid-area: main;
+    text-align: center;
+    margin-left: 30px;
+    height: auto;
+  }
+  
+  h2 {
+    font-family: Telegraf;
+    font-weight: bold;
+    margin-top: 8%;
+  }
+  
+  footer {
+    background: linear-gradient(to top, #4b5668, #1d2025);
+    background-color: #1d2025;
+    color: #4b5668;
+    height: 100px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .footer h3 {
+    font-family: Telegraf;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 2px;
+  }
+  
+  .footer p {
+    font-family: Telegraf;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  .caixa_grid {
+    margin-left: 5px;
+    background-color: #eadcea7c;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    max-width: 800px;
+    width: 80%;
+    padding: 7px;
+    text-align: center;
+  }
+
+  .aside_produto {
+    position: fixed;
+    right: 0;
+    grid-area: aside;
+    margin-right: 40px;
+    background-color: #eadcea7c;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    max-width: 800px;
+    width: fit-content;
+    height: fit-content;
+    padding: 9px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 50px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    align-items: center;
+    border-color: transparent;
+    border-radius: 10px;
+    position: flex;
+  }
+  .grid div {
+    color: #000000;
+    text-align: center;
+  }
+  .item {
+    flex-grow: 1;
+    background-color: transparent;
+    padding: 15px 10px;
+    flex-basis: 200px;
+    text-align: right;
+    color: #ffffff;
+    margin-left: 10px;
+  }
+  
+  .item img {
+    width: 300px;
+    height: 200px;
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+  }
+  
+  .caixa_prod{
+    background-color: #eadcea7c;
+    border-radius: 10px;
+  }
+
+/*Comando para organização dos botões*/
+label {
+    display: block;
+    flex-direction: row;
+    line-height: 26px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  input[type=text],
+  input[type=number],
+  input[type=email] {
+    min-width: 250px;
+  }
+
+/*Design responsivo*/
+
+@media (max-width: 768px) {
+    .aside_produto {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+    }
+  }
+  
