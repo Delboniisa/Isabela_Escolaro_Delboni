@@ -91,23 +91,20 @@ footer {
 .footer h3 {
   font-family: Telegraf;
   font-weight: bold;
-  color: #000000;
+  color: #ececec;
   margin-top: 2px;
 }
 
 .footer p {
   font-family: Telegraf;
   font-weight: bold;
-  color: #000000;
+  color: #ececec;
 }
 
 /*Comando para Home/index*/
 .form {
-  margin: 20px;
   margin-top: 100px;
-  position: static;
-  right: 2%;
-  width: fit-content;
+  width: 50%;
   height: fit-content;
   min-width: 30%;
   background-color: #eadcea7c;
@@ -115,6 +112,8 @@ footer {
   padding: 20px;
   text-align: center;
   display: block;
+  align-items: center;
+  margin: auto;
 }
 
 .img {

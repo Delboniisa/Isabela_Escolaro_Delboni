@@ -91,14 +91,14 @@ body {
   .footer h3 {
     font-family: Telegraf;
     font-weight: bold;
-    color: #000000;
+    color: #ececec;
     margin-top: 2px;
   }
   
   .footer p {
     font-family: Telegraf;
     font-weight: bold;
-    color: #000000;
+    color: #ececec;
   }
 
   .aside_contato {
@@ -108,16 +108,17 @@ body {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     max-width: 800px;
-    width: auto;
     width: fit-content;
     height: fit-content;
     padding: 18px;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 20px;
     margin-bottom: 50px;
+    float: right;
   }
 
   .caixa_grid {
+    grid-area: main;
     margin-left: 5px;
     background-color: #eadcea7c;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -126,6 +127,7 @@ body {
     width: 80%;
     padding: 7px;
     text-align: center;
+    margin-top: 20px;
   }
 
 /*Comando para organização dos botões*/

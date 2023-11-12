@@ -91,14 +91,14 @@ body {
   .footer h3 {
     font-family: Telegraf;
     font-weight: bold;
-    color: #000000;
+    color: #ececec;
     margin-top: 2px;
   }
   
   .footer p {
     font-family: Telegraf;
     font-weight: bold;
-    color: #000000;
+    color: #ececec;
   }
   .caixa {
     position: inherit;
@@ -135,7 +135,7 @@ body {
     width: 70%;
   }
   
-  .caixa_sobre {
+  ._sobre {
     background-color: #eadcea7c;
     border-radius: 10px;
     width: fit-content;
