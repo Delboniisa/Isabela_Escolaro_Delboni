@@ -49,7 +49,7 @@
       <div class="form">
         <h1>Formulário de Interesse <img src="./imagens/heart.gif" alt="Coração batendo preto" width="20px"
             height="20px"></h1>
-        <form>
+        <form onsubmit="return validarDados()">
           <label for="nome">Nome:</label>
           <input type="text" name="nome" id="nome">
           <br><br>
@@ -75,6 +75,37 @@
     <h3>Se você tem interesse na Terra Plana e quer saber mais, nos siga!</h3>
     <p>Facebook: Terraplanistas <br> Instagram: @Terraplanistas <br> Twitter: terraplanistas</p>
   </footer>
+  <script>
+
+    function validarDados(nome, email, telefone, cpf) {
+      var nome = document.getElementById('nome').value;
+      var email = document.getElementById('email').value;
+      var telefone = document.getElementById('telefone').value;
+      var cpf = document.getElementById('cpf').value;
+      
+      if (!nome.trim()) {
+        alert('O campo "Nome" deve ser preenchido.');
+        return false;
+      }
+  
+      if (!email.includes('@')) {
+        alert('O campo "E-mail" deve ser um e-mail válido.');
+        return false;
+      }
+  
+      if (telefone.length <= 10) {
+        alert('O campo "Telefone" deve ter pelo menos 10 dígitos.');
+        return false;
+      }
+
+      if (cpf.length <= 11) {
+        alert('O campo "Cpf" deve ter pelo menos 11 dígitos.');
+        return false;
+      }
+    
+      return true;
+    }
+    </script>
 </body>
 
 </html>
