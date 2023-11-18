@@ -1,3 +1,4 @@
+<!-- Usei o for para alternar as cores das linhas das tabelas-->
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -6,6 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terra Plana News</title>
   <link rel="stylesheet" href="styleestatistica.css">
+  <style>
+    .destacar{
+      background-color: #8d8c8c;
+    }
+  </style>
 </head>
 
 <body>
@@ -241,6 +247,21 @@
     <h3>Se você tem interesse na Terra Plana e quer saber mais, nos siga!</h3>
     <p>Facebook: Terraplanistas <br> Instagram: @Terraplanistas <br> Twitter: terraplanistas</p>
   </footer>
+
+  <script>
+    var tabelas = document.querySelectorAll('table');
+    var i;
+    var j;
+    for ( i = 0; i < tabelas.length; i++) {
+      var linhas = tabelas[i].querySelectorAll('tbody tr');
+
+      for ( j = 0; j < linhas.length; j++) {
+        if (j % 2 !== 0) {
+          linhas[j].classList.add('destacar');
+        }
+      }
+    }
+  </script>
 </body>
 
 </html>
