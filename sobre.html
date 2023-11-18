@@ -1,3 +1,4 @@
+<!-- Apenas uso de função e if no formulário-->
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -33,7 +34,7 @@
     </header>
     <aside class="aside_sobre">
       <h2>Tire suas dúvidas aqui</h2>
-      <form>
+      <form onsubmit="return validarDados()">
         <label for="nome"><strong>Nome: </strong> </label>
         <input type="text" name="nome" id="nome">
         <br>
@@ -102,6 +103,33 @@
   <h3>Se você tem interesse na Terra Plana e quer saber mais, nos siga!</h3>
   <p>Facebook: Terraplanistas <br> Instagram: @Terraplanistas <br> Twitter: terraplanistas</p>
 </footer>
+<script>
+
+function validarDados(nome, email,duvida) {
+      var nome = document.getElementById('nome').value;
+      var email = document.getElementById('email').value;
+      
+      var duvida = document.getElementById('duvida').value;
+      
+      if (!nome.trim()) {
+        alert('O campo "Nome" deve ser preenchido.');
+        return false;
+      }
+  
+      if (!email.includes('@')) {
+        alert('O campo "E-mail" deve ser um e-mail válido.');
+        return false;
+      }
+
+      if (!duvida.trim()) {
+        alert('O campo "Dúvida deve ser preenchido."');
+        return false;
+      }
+    
+      return true;
+    }
+
+</script>
 </body>
 
 </html>
