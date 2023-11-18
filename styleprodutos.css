@@ -121,7 +121,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     align-items: center;
-    border-color: transparent;
+    border-color: #1d2025b4;
     border-radius: 10px;
     position: flex;
   }
@@ -131,14 +131,18 @@ footer {
   }
 .item {
     flex-grow: 1;
-    background-color: transparent;
+    background-color: #e0e0e0;
     padding: 15px 10px;
     flex-basis: 200px;
     text-align: right;
     color: #ffffff;
     margin-left: 10px;
   }
-  
+
+  .item:hover {
+    background-color: rgb(58, 58, 58);
+  }
+
 .item img {
   width: 300px;
   height: 200px;

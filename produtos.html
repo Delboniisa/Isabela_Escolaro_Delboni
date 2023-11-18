@@ -112,6 +112,16 @@
     <h3>Se você tem interesse na Terra Plana e quer saber mais, nos siga!</h3>
     <p>Facebook: Terraplanistas <br> Instagram: @Terraplanistas <br> Twitter: terraplanistas</p>
   </footer>
+  <script>
+   const items = document.querySelectorAll(".item");
+
+    items.forEach((item) => {
+      item.addEventListener("mouseenter", () => {
+        item.classList.add("black");
+      });
+    });
+
+  </script>
 </body>
 
 </html>
