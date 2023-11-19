@@ -1,4 +1,4 @@
-<!-- Usei o for para alternar as cores das linhas das tabelas-->
+<!-- Usei o for para alternar as cores das linhas das tabelas, e formulário com validação, feito com função e if-->
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -39,7 +39,7 @@
     </header>
     <aside class="aside_estatistica">
       <h2>Tire suas dúvidas aqui</h2>
-      <form>
+      <form onsubmit="return validarDados()">
         <label for="nome"><strong>Nome: </strong> </label>
         <input type="text" name="nome" id="nome">
         <br>
@@ -261,6 +261,29 @@
         }
       }
     }
+
+    function validarDados(nome, email,duvida) {
+        var nome = document.getElementById('nome').value;
+        var email = document.getElementById('email').value;
+        var duvida = document.getElementById('duvida').value;
+        
+        if (!nome.trim()) {
+          alert('O campo "Nome" deve ser preenchido.');
+          return false;
+        }
+    
+        if (!email.includes('@')) {
+          alert('O campo "E-mail" deve ser um e-mail válido.');
+          return false;
+        }
+  
+        if (!duvida.trim()) {
+          alert('O campo "Dúvida deve ser preenchido."');
+          return false;
+        }
+      
+        return true;
+      }
   </script>
 </body>
 
